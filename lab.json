@@ -1,0 +1,27 @@
+{
+  "slug": "contact-cartographer",
+  "title": "Contact Cartographer",
+  "tagline": "Arrange a chain reaction and trace how tiny contact estimates redirect motion.",
+  "kind": "demo",
+  "tags": ["simulation", "graphics", "interaction"],
+  "date": "2026-10-09",
+  "builtBy": "Virtual Lab",
+  "entry": "demo/index.html",
+  "paper": {
+    "title": "RiCo: Neural Simulation of Rigid-Body Interactions via Local Contact Reasoning",
+    "arxiv": "2610.12333",
+    "authors": [
+      "Ruixiang Ouyang",
+      "Guanren Qiao",
+      "Fansen Meng",
+      "Yueci Deng",
+      "Ruixing Jin",
+      "Kui Jia",
+      "Guiliang Liu"
+    ]
+  },
+  "novelty": "No known implementation (not verified): this demo fuses local-contact reasoning ideas with an editable chain-reaction puzzle and a coarse-response comparison.",
+  "description": "An offline 2D collision puzzle that makes an approximate contact-to-motion trace visible. It is an educational illustration, not a physical simulator.",
+  "howItWorks": "Three procedural convex polygons move under a bounded fixed-step impulse simulation. Local mode estimates a surface contact from polygon support points and applies an offset spin effect; coarse mode uses object centers and omits spin. The trace labels the contact approximation and resulting response.",
+  "controls": "Drag bodies to arrange them and drag the lime handle to aim and set strength. Launch starts a run; Reset restores the preset; Replay repeats the last setup. Keyboard: focus the board, press 1–3 to select a body, arrows to move it, Shift+arrows to aim, and +/− to adjust strength. Toggle Coarse comparison to switch response modes."
+}
